@@ -24,14 +24,14 @@
 					<nav>
 						<ul>
 							<li class="active"><a href="#home" class="scroll">主页</a></li>
-							<li><a href="#" class="scroll">xxx</a></li>
-							<li><a href="#" class="scroll">xxx</a></li>
-							<li><a href="#" class="scroll">xxx</a></li>
-							<li><a href="#" class="scroll">xxx</a></li>
+							<li><a href="#" class="scroll">资料</a></li>
+							<li><a href="#" class="scroll"></a></li>
+							<li><a href="#" class="scroll"></a></li>
+							<li><a href="#" class="scroll"></a></li>
 							<div class="clear"> </div>
 						</ul>
 					</nav>
-					<h1><a href="https://qiushiyinghuo.club">求是萤火</a></h1>
+					<h1><a href="https://qiushiyinghuo.club">Q S Y H</a></h1>
 				</header>
 			</div>
 		</div>
@@ -42,9 +42,19 @@
 				<!---start-da-slider----->
 				<div id="da-slider" class="da-slider">
 					<div class="da-slide">
-						<h2>标题一</h2>
-						<p>段落文字</p>
-						<a href="#" class="da-link">查看</a>
+						<h2>要不要听歌呢</h2>
+						<p>一个人的日子，一个人的音乐，静静的去听这个世界刚刚消失的一切。</p>
+						<a class="da-link" id="music_start">播放</a>
+						<audio loop src="./source/music_basic.mp3" id="audio" preload="auto">该浏览器不支持audio属性</audio>
+						<script type="text/javascript">
+							document.getElementById("music_start").addEventListener("click", function () {
+								function music_start() {
+									var audio = document.getElementById('audio');
+									audio.play();
+								}
+								music_start();
+							});
+						</script>
 					</div>
 				</div>
 				<!---strat-slider---->
@@ -58,10 +68,10 @@
 		<div class="wrap">
 			<div class="section group">
 				<div class="col_1_of_1 span_1_of_1">
-					<h3>抢课脚本</h3>
-					<a href="https://qiushiyinghuo.club/source/xk.js">
-						点击查看中南民族大学抢课脚本源文件
-					</a>
+					<h3>欢迎光临</h3>
+					<p>
+						相关功能正在建设中
+					</p>
 				</div>
 			</div>
 		</div>
