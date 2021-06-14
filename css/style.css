@@ -12,7 +12,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, top-nav, nav, section {
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+header, nav {
 	display: block;
 }
 
@@ -46,6 +51,8 @@ body {
 	background: url(../images/sliderbg.jpg) no-repeat;
 	background-size: 100%;
 	background-size: cover;
+	height: 80%;
+	overflow: hidden;
 }
 
 /*****/
@@ -67,7 +74,7 @@ body {
 	color: #555;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+header, nav {
 	display: block;
 }
 
@@ -80,7 +87,6 @@ blockquote, q {
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-	content: '';
 	content: none;
 }
 
@@ -114,7 +120,7 @@ img {
 	color: #fff;
 	font-size: 2.5em;
 	font-weight: 400;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #topnav nav {
@@ -261,3 +267,117 @@ img {
 		width: 80%;
 	}
 }
+
+@media only screen and (max-width:1366px) {
+	.wrap {
+		width: 85%;
+	}
+	#topnav nav ul li a {
+		padding: 0.7em 0.85em;
+	}
+	.span_1_of_1 p {
+		width: 88%;
+	}
+}
+
+@media only screen and (max-width:1280px) {
+	.wrap {
+		width: 85%;
+	}
+	.span_1_of_1 h3 {
+		font-size: 2.17em;
+	}
+	.span_1_of_1 p {
+		width: 100%;
+		margin: 0 auto;
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (max-width:1024px) {
+	.wrap {
+		width: 87%;
+	}
+	#topnav h1 {
+		padding: 1.9em 0em;
+	}
+	#topnav nav ul li a {
+		padding: 0.65em 0.7em;
+	}
+	.span_1_of_1 h3 {
+		font-size: 2.1em;
+	}
+	.span_1_of_1 p {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.wrap {
+		width: 90%;
+	}
+	#topnav h1 {
+		padding: 0em 0em;
+	}
+	#topnav nav ul li a {
+		padding: 0.3em 0.4em;
+	}
+	.span_1_of_1 h3 {
+		font-size: 1.7em;
+	}
+	.span_1_of_1 p {
+		width: 100%;
+		margin: 0 auto;
+		font-size: 0.98em;
+	}
+	#team {
+		padding: 1em 0;
+	}
+}
+
+@media only screen and (max-width:640px) {
+	.wrap {
+		width: 90%;
+	}
+	.span_1_of_1 h3 {
+		font-size: 1.55em;
+	}
+	.span_1_of_1 p {
+		font-size: 0.98em;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.wrap {
+		width: 90%;
+	}
+	#topnav nav ul li a {
+		padding: 0.2em 0.4em;
+	}
+	.span_1_of_1 h3 {
+		font-size: 1.35em;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.wrap {
+		width: 90%;
+	}
+	#topnav nav ul li a {
+		padding: 0.1em 0.6em;
+	}
+	.span_1_of_1 h3 {
+		font-size: 1.1em;
+	}
+	.span_1_of_1 p {
+		width: 100%;
+		font-size: 0.8725em;
+		margin: 0 auto;
+	}
+	#team {
+		padding: 0.5em 0;
+	}
+}
+
+/*****end- Media Quries *****/
